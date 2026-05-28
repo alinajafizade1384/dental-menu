@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0077B6">
+    <meta name="description" content="منوی دیجیتال خدمات دندانپزشکی - لبخند شما، اولویت ما">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+    <title>منوی دیجیتال | کلینیک دندانپزشکی</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- هدر -->
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">🦷</div>
+                <div class="logo-text">
+                    <h1>کلینیک دندانپزشکی لبخند</h1>
+                    <p>دقت، بهداشت، زیبایی</p>
+                </div>
+            </div>
+            <div class="install-banner" id="installBanner" style="display: none;">
+                <p>📱 نصب اپلیکیشن برای دسترسی آفلاین</p>
+                <button id="installBtn">نصب</button>
+            </div>
+        </header>
+
+        <!-- دسته‌بندی‌ها -->
+        <div class="categories" id="categories">
+            <button class="category-btn active" data-category="all">همه خدمات</button>
+            <button class="category-btn" data-category="diagnostic">🩻 تشخیص</button>
+            <button class="category-btn" data-category="cosmetic">✨ زیبایی</button>
+            <button class="category-btn" data-category="treatment">🩺 درمان</button>
+            <button class="category-btn" data-category="surgery">⚙️ جراحی</button>
+            <button class="category-btn" data-category="ortho">🔄 ارتودنسی</button>
+            <button class="category-btn" data-category="preventive">🧼 بهداشت</button>
+        </div>
+
+        <!-- جستجو -->
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="جستجوی خدمات... (مثال: عصب‌کشی، ایمپلنت، لمینت)">
+            <span class="search-icon">🔍</span>
+        </div>
+
+        <!-- لیست خدمات -->
+        <div class="services-grid" id="servicesGrid"></div>
+
+        <!-- فوتر با اطلاعات تماس -->
+        <footer class="footer">
+            <div class="contact-info">
+                <div class="contact-item">📞 ۰۲۱-۱۲۳۴۵۶۷۸</div>
+                <div class="contact-item">📍 تهران، خیابان ولیعصر، نب کشاورز</div>
+                <div class="contact-item">⏰ شنبه تا چهارشنبه ۹-۲۰ | پنجشنبه ۹-۱۴</div>
+            </div>
+            <div class="guarantee">
+                ✅ گارانتی خدمات | ✅ بیمه‌های معتبر | ✅ مشاوره رایگان
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
